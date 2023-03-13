@@ -1,0 +1,48 @@
+.navHeader {
+    font-size: 60px;
+    background-color: #99B898;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    line-height: 135px;
+  
+}
+
+body {
+    margin: 0%;
+     background-color: #2A363B;
+}
+
+.bodyContainer {
+    display: grid;
+}
+
+.box1, .box2, .box3 {
+    margin-left: 150px;
+    grid-row: 1;
+    width: 55%;
+    height: 300px;
+    outline-style: inset;
+    background-color: #FECEA8;
+}
+
+.box4, .box5 {
+    margin-left: 150px;
+    grid-row: 2;
+    width: 55%;
+    height: 300px;
+    outline-style: inset;
+    background-color: #FECEA8;
+}
+
+.boxHeader {
+    text-align: center;
+    font-size: 30px;
+    height: 80px;
+    background-color: #89579c;
+}
+
+.contentContainer {
+    margin-left: 10px;
+line-height: 70px;
+}
