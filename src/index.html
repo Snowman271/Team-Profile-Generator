@@ -1,3 +1,55 @@
+const managerBox = manager => 
+`
+<div class="bodyContainer">
+  <h1 class="box1">
+    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
+   <div class="contentContainer">
+    <div class="boxContentId">`ID: ${manager.getId()}`</div>
+    <div class="boxContentEmail">Email:</div>
+    <div class="boxContentOffice">Office Num: </div>
+   </div>   
+  </h1>
+`
+
+const engineerBox = engineer =>
+`
+<div class="bodyContainer">
+  <h1 class="box1">
+    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
+   <div class="contentContainer">
+    <div class="boxContentId">ID:</div>
+    <div class="boxContentEmail">Email:</div>
+    <div class="boxContentOffice">Office Num: </div>
+   </div>   
+  </h1>
+`
+
+const internBox = intern =>
+`
+<div class="bodyContainer">
+  <h1 class="box1">
+    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
+   <div class="contentContainer">
+    <div class="boxContentId">ID:</div>
+    <div class="boxContentEmail">Email:</div>
+    <div class="boxContentOffice">Office Num: </div>
+   </div>   
+  </h1>
+`
+
+if (role === "Manager") {
+  role = `☕${employee.role}`;
+  special = `Office Number: ${employee.officeNumber}`;
+} else if (role === "Engineer") {
+  role = `👓${employee.role}`;
+  special = `GitHub: <a href="https://github.com/${employee.github}" target="_blank"> ${employee.github}</a>`;
+} else if (role === "Intern") {
+  role = `🎓${employee.role}`;
+  special = `School: ${employee.school}`;
+}
+
+const htmlPrint = data =>
+`
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,54 +67,12 @@
  </header>
 
 <body>
-  <div class="bodyContainer">
-  <h1 class="box1">
-    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
-   <div class="contentContainer">
-    <div class="boxContentId">ID:</div>
-    <div class="boxContentEmail">Email:</div>
-    <div class="boxContentOffice">Office Num: </div>
-   </div>   
-  </h1>
 
-  <h1 class="box2">
-    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
-   <div class="contentContainer">
-    <div class="boxContentId">ID:</div>
-    <div class="boxContentEmail">Email:</div>
-    <div class="boxContentOffice">Office Num: </div>
-   </div>   
-  </h1>
-  
-  <h1 class="box3">
-    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
-   <div class="contentContainer">
-    <div class="boxContentId">ID:</div>
-    <div class="boxContentEmail">Email:</div>
-    <div class="boxContentOffice">Office Num: </div>
-   </div>   
-  </h1>
- 
-  <h1 class="box4">
-    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
-   <div class="contentContainer">
-    <div class="boxContentId">ID:</div>
-    <div class="boxContentEmail">Email:</div>
-    <div class="boxContentOffice">Office Num: </div>
-   </div>   
-  </h1>
- 
-  <h1 class="box5">
-    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
-   <div class="contentContainer">
-    <div class="boxContentId">ID:</div>
-    <div class="boxContentEmail">Email:</div>
-    <div class="boxContentOffice">Office Num: </div>
-   </div>   
-  </h1>
-
- </div>
+d
 </body>
 
 <script src="./script.js"></script>
 </html>
+`
+
+module.exports = htmlPrint;

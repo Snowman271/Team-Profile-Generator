@@ -26,16 +26,19 @@ const questionsArray = [
 
 //Inquirer install
 inquirer
-    .prompt(questionsArray)
+    .prompt([
+        {
+            type: 'list',
+            message: 'Would you like to add another team member?',
+            name: 'addMember',
+            choices: [
+                'Engineer',
+                'Intern',
+                'finn' ]
+        }
+    ])
     .then((data) => {
 console.log(data.name);
-
-// ## Credits
-// If you have questions or want more info Please feel free to email me!
-// Email: [${data.email}](mailto:${data.email}) \n
-// GitHub Username: [${data.gitHubUser}](https://github.com/${data.gitHubUser})
-
-// ${data.contributions}
 
     })
     
