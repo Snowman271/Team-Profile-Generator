@@ -11,10 +11,10 @@ describe('Engineer', () => {
             expect(engineer.github).toEqual('DaveGHLink');
         })
     })
-    describe('getGitHub', () => {
+    describe('getGHlink', () => {
         it('Returns Employees Git hub link', () => {
             const engineer = new Engineer('Dave', 271, 'Dave@yahoo.com', 'DaveGHLink')
-            expect(engineer.getGitHub()).toEqual('DaveGHLink');
+            expect(engineer.getGHlink()).toEqual('DaveGHLink');
         })
     })
     describe('getRole', () => {
