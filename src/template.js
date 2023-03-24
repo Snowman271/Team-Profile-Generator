@@ -2,9 +2,9 @@ const managerBox = manager =>
 `
 <div class="bodyContainer">
   <h1 class="box1">
-    <div class="boxHeader"> ${manager.getName()} <div class="occupation">${manager.icon} ${manager.getRole()} </div> </div>
+    <div class="boxHeader"> ${manager.getName()} <div class="occupation">☕ ${manager.getRole()} </div> </div>
    <div class="contentContainer">
-    <div class="boxContentId"> ID: ${manager.getId()} </div>
+    <div class="boxContentId"> ID:${manager.getId()} </div>
     <div class="boxContentEmail">Email: <a href="mailto: ${manager.getEmail()}" class="email">${manager.getEmail()}</a></div>
     <div class="boxContentOffice">Office Num: ${manager.getOfficeNum()}</div>
    </div>   
@@ -15,23 +15,23 @@ const engineerBox = engineer =>
 `
 <div class="bodyContainer">
   <h1 class="box1">
-    <div class="boxHeader"> Name ${engineer.getName()} <div class="occupation"> ${engineer.icon} ${engineer.getRole()} </div> </div>
+    <div class="boxHeader"> ${engineer.getName()} <div class="occupation"> 👓 ${engineer.getRole()} </div> </div>
    <div class="contentContainer">
     <div class="boxContentId">ID:${engineer.getId()} </div>
-    <div class="boxContentEmail"> Email: <a href="mailto: ${manager.getEmail()}" class="email">${manager.getEmail()}</a></div>
-    <div class="boxContentOffice">GitHub Account: <a class="subClassA" href="https://github.com/${engineer.getGitHub()}">${engineer.getGitHub()}</a> </div>
+    <div class="boxContentEmail"> Email: <a href="mailto: ${engineer.getEmail()}" class="email">${engineer.getEmail()}</a></div>
+    <div class="boxContentOffice">GitHub Account: <a class="subClassA" href="https://github.com/${engineer.getGHlink()}">${engineer.getGHlink()}</a> github link </div>
    </div>   
-  </h1>
+  </h1>  
 `
 
 const internBox = intern =>
 `
 <div class="bodyContainer">
   <h1 class="box1">
-    <div class="boxHeader"> Name <div class="occupation"> Occupation </div> </div>
+    <div class="boxHeader"> ${intern.getName()} <div class="occupation"> 🎓 Intern </div> </div>
    <div class="contentContainer">
     <div class="boxContentId">ID: ${intern.getId()} </div>
-    <div class="boxContentEmail">Email: <a href="mailto: ${manager.getEmail()}" class="email">${manager.getEmail()}</a></div>
+    <div class="boxContentEmail">Email: <a href="mailto: ${intern.getEmail()}" class="email">${intern.getEmail()}</a></div>
     <div class="boxContentOffice">School: ${intern.getSchool()} </div>
    </div>   
   </h1>
@@ -49,7 +49,7 @@ const cardGroup = teamCurr => {
       else if(teamCurr[i].getRole() === 'Manager'){
           template += managerBox(teamCurr[i]);
       }
-  } return htmlTemplate
+  } return template
 }
 
 const htmlPrint = data =>

@@ -30,7 +30,6 @@ const teamPicker = [];
         name: 'officeNum',
     }
 ]).then((response) => {
-    console.log(response);
     const manager = new Manager(response.name, response.id, response.email, response.officeNum);
     teamPicker.push(manager);
     newTeamatePrompt();

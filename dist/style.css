@@ -18,9 +18,8 @@ body {
 }
 
 .box1, .box2, .box3 {
-    margin-left: 150px;
-    grid-row: 1;
-    width: 55%;
+    margin-left: 250px;
+    width: 75%;
     height: 300px;
     outline-style: inset;
     background-color: #FECEA8;
@@ -28,7 +27,6 @@ body {
 
 .box4, .box5 {
     margin-left: 150px;
-    grid-row: 2;
     width: 55%;
     height: 300px;
     outline-style: inset;
