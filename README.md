@@ -23,5 +23,3 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 ![image](https://user-images.githubusercontent.com/107505824/227653382-3381d969-2dde-41fd-9d1a-7f6c2a48564e.png)
-
-#Live Link
